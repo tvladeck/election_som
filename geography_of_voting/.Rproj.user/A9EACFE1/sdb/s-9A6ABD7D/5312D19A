@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "library(kohonen)\nlibrary(RColorBrewer) \nlibrary(fields) \n\n# you will need this saved self-organized-map object\nsaved_som <- readRDS(\"saved_som.rds\")\nsource(\"som_c_plot.R\")\nlibrary(shiny)\nvariables_titles <- read.csv(\"variables_titles.csv\")\n\nshinyServer(function(input, output) {\n\n  \n  output$thePlot <- renderPlot({\n    plotCplane(saved_som,\n               variables_titles$VARIABLE[which(variables_titles$TITLE == input$title)],\n               title = input$title)\n  })\n  \n  output$referencePlot <- renderPlot({\n    plotCplane(saved_som,\n               Y = T,\n               title = \"HRC Voting Share\")\n  })\n  \n\n})\n",
+    "created" : 1481488514794.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "870363102",
+    "id" : "5312D19A",
+    "lastKnownWriteTime" : 1481508063,
+    "last_content_update" : 1481508063974,
+    "path" : "~/Downloads/shiny_project_2/server.R",
+    "project_path" : "server.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

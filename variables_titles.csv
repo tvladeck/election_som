@@ -1,0 +1,44 @@
+VARIABLE,TITLE
+Less.Than.High.School,Less than HS education
+At.Least.High.School.Diploma,At least an HS diploma
+At.Least.Bachelor.s.Degree,At least a bachelor's degree
+Graduate.Degree,Graduate degree
+School.Enrollment,School enrollment
+Median.Earnings.2010.dollars,Median earnings
+White,White (not Latino) population
+Black,Black population
+Amerindian,Native American population
+Asian,Asian American population
+Other,Other population
+Hispanic,Hispanic population
+Children.Under.6.Living.in.Poverty,Child poverty rate
+Adults.65.and.Older.Living.in.Poverty,Senior poverty rate
+Total.Population,Total population
+Preschool.Enrollment.Ratio.enrolled.ages.3.and.4,Preschool enrollment ratio
+Poverty.Rate.below.federal.poverty.threshold,Poverty rate
+Gini.Coefficient,Gini coefficient (income heterogeneity)
+Child.Poverty.living.in.families.below.the.poverty.line,Families below poverty line
+Management.professional.and.related.occupations,Management/Professional occupations
+Service.occupations,Service occupations
+Sales.and.office.occupations,Sales/office occupations
+Farming.fishing.and.forestry.occupations,"Farming, fishing, forestry occpations"
+Construction.extraction.maintenance.and.repair.occupations,Construction & extraction & repair occupations
+Production.transportation.and.material.moving.occupations,Production & transportation occupations
+SIRE_homogeneity,Ethnic homogeneity
+median_age,Median age
+Poor.physical.health.days,Poor physical health
+Poor.mental.health.days,Poor mental health
+Low.birthweight,Low birthweigh
+Teen.births,Teen births
+Children.in.single.parent.households,Single parent households
+Adult.smoking,Adult smoking
+Adult.obesity,Adult obesity
+Diabetes,Diabetes
+Sexually.transmitted.infections,STIs
+HIV.prevalence.rate,HIV rate
+Uninsured,Uninsured
+Unemployment,Unemployment
+Violent.crime,Violent crime
+Homicide.rate,Homicide rate
+Injury.deaths,Injury deaths
+Infant.mortality,Infant mortality

@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "library(kohonen)\nlibrary(RColorBrewer) \nlibrary(fields) \n\n# you will need this saved self-organized-map object\nsaved_som <- readRDS(\"saved_som.rds\")\nsource(\"som_c_plot.R\")\nlibrary(shiny)\nvariables_titles <- read.csv(\"variables_titles.csv\")\n\n\nshinyUI(fluidPage(\n\n  titlePanel(\"A Self-Organized Map of Voting Patterns\"),\n  \n  # Sidebar with a slider input for number of bins\n  \n  fluidRow(\n    column(12, sidebarPanel(\n      selectInput(\"title\", label = h3(\"Select variable\"),\n                  choices = variables_titles$TITLE,\n                  selected = variables_titles$TITLE[1])\n    ))\n  ),\n  \n  fluidRow(\n        column(6, plotOutput(\"thePlot\", width=\"100%\")),\n        column(6, plotOutput(\"referencePlot\", width=\"100%\"))\n  )\n  \n  \n  # sidebarLayout(\n  #   sidebarPanel(\n  #     selectInput(\"title\", label = h3(\"Select variable\"),\n  #                 choices = variables_titles$TITLE,\n  #                 selected = variables_titles$TITLE[1])\n  #   ),\n  # \n  #   # Show a plot of the generated distribution\n  #   mainPanel(\n  #     fluidRow(\n  #       column(6, plotOutput(\"thePlot\")),\n  #       column(6, plotOutput(\"referencePlot\"))\n  #     )\n  #   )\n  # )\n))\n",
+    "created" : 1481488531117.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3653867079",
+    "id" : "46EB3D70",
+    "lastKnownWriteTime" : 1481507964,
+    "last_content_update" : 1481507964262,
+    "path" : "~/Downloads/shiny_project_2/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
