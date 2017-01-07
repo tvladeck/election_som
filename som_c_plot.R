@@ -94,11 +94,22 @@ plotCplane <- function(som_obj, variable=sample(colnames(som_obj$data), 1),
   for (row in 1:som_obj$grid$ydim) {
     for (column in 0:(som_obj$grid$xdim - 1)) {
       Hexagon(column + offset, row - 1, col = ColorCode[ind])
-      ind <- ind +1}
+      ind <- ind +1
+    }
     offset <- ifelse(offset, 0, 0.5)
   }  
   if (legend==TRUE){
-    image.plot(legend.only=TRUE, col=ColRamp, zlim=c(-1.5,1.5))
+    image.plot(legend.only=TRUE, 
+               col=ColRamp,
+               zlim = c(-1.5, 1.5)
+               ,nlevel = 2
+               , breaks = c(-1.5, 0, 1.5)
+               ,lab.breaks=c("lowest decile", "", "top decile")
+               #,breaks = seq(from = -1.5, to = 1.5, length.out = 51)
+               #,lab.breaks=c("lowest decile", rep("", 49), "top decile")
+               ,horizontal = F
+               # ,legend.width = 0.8
+               )
   }
   
 }

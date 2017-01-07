@@ -17,3 +17,5 @@ plotCplane(saved_som, Y = T, title = "HRC Voting Share")
 # all other plots work like this
 # plotCplane(saved_som, VARIABLE, title = TITLE)
 # VARIABLES and TITLES stored in separate CSV
+
+
